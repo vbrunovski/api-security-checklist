@@ -47,7 +47,6 @@ Practical guide and checklist for finding API vulnerabilities based on the **OWA
 
 - [ ] Read-only Field Update: Try to modify fields that are supposed to be "read-only" (e.g., created_at or user_id).
 
-- [ ] ---
 
 ## 🏗️ Phase 4: Unrestricted Resource Consumption
 *Testing how the API handles high loads and large data.*
@@ -88,7 +87,6 @@ Practical guide and checklist for finding API vulnerabilities based on the **OWA
 - [ ] **HTTP Headers:** Check for missing security headers: `HSTS`, `Content-Security-Policy`, and `X-Content-Type-Options`.
 - [ ] **Verbosity:** Check if `DEBUG` mode is enabled (common in staging environments).
 
-- [ ] ---
 
 ## 🤖 Phase 8: Lack of Protection from Automated Threats
 *Can the API be easily abused by scripts and bots?*
