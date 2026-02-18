@@ -114,6 +114,13 @@ Practical guide and checklist for finding API vulnerabilities based on the **OWA
 
 ---
 
+## 🔐 Phase 11: Broken Function Level Authorization (BFLA)
+*Can a regular user perform administrative actions?*
+
+- [ ] **Administrative Endpoint Access:** Try to access `/api/admin/delete_user` or `/api/v1/settings/global` while logged in as a standard user.
+- [ ] **Method Swapping (Method BFLA):** If `GET /api/v1/users/1` is allowed, try `DELETE /api/v1/users/1` or `POST /api/v1/users/create_admin`.
+- [ ] **Parameter-Based Role Switching:** Check if changing a parameter like `user_type=user` to `user_type=admin` in the request body grants higher privileges.
+
 ## 🛠️ Tooling Recommendations
 * **Burp Suite** — The industry standard web proxy.
 * **Postman** — Best for manual API requests and collections.
