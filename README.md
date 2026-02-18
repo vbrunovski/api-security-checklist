@@ -21,8 +21,6 @@ Practical guide and checklist for finding API vulnerabilities based on the **OWA
 - [ ] **Version Scanning:** Check for older API versions (e.g., `/v1/`, `/v2/` vs `/beta/`).
 - [ ] **Method Testing:** Try changing HTTP methods (e.g., Change `GET` to `POST`, `PUT`, `PATCH` or `DELETE`).
 
-- [ ] ---
-
 ## 🔑 Phase 2: Broken Object Level Authorization (BOLA / IDOR)
 *Can you access someone else's data by manipulating IDs?*
 
