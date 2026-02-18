@@ -45,3 +45,6 @@ Practical guide and checklist for finding API vulnerabilities based on the **OWA
     "is_vip": true,
     "balance": 99999
   }
+- [ ] Excessive Data Exposure: Inspect JSON responses for sensitive PII (emails, home addresses, internal IDs) hidden on the frontend but present in the API response.
+
+- [ ] Read-only Field Update: Try to modify fields that are supposed to be "read-only" (e.g., created_at or user_id).
